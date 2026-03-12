@@ -104,19 +104,19 @@
 
         Bluetooth {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans
+&tog 7  &trans  &trans  &trans  &trans            &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &trans
 &trans  &trans  &trans  &trans  &trans            &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &trans
 &trans  &trans  &trans  &trans  &trans            &trans         &trans         &trans         &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans         &bootloader                   &bt BT_CLR     &bt BT_CLR_ALL
             >;
         };
 
-        layer_7 {
+        ANDROID {
             bindings = <
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans
+&trans  &trans  &trans  &mt LCTRL LANG2  &trans  &trans    &trans  &mt RCTRL LANG1          &trans  &trans
             >;
         };
 
